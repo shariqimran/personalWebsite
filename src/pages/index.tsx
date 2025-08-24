@@ -387,9 +387,9 @@ function About(){
           transition={{ duration: 0.6 }}
           className="space-y-6"
         >
-          <h3 className="text-2xl font-bold text-gray-900 dark:text-white">Hi there!</h3>
+          <h3 className="text-2xl font-bold text-gray-900 dark:text-white">Hello World!</h3>
           <p className="text-lg leading-relaxed text-gray-700 dark:text-gray-300">
-            Hey! I'm Shariq, and thanks for stopping by! I'm currently in my 3rd year at the University of British Columbia (UBC), majoring in Combined Major in Science with a focus on Computer & Data Science. When I'm not buried in coursework, you'll probably find me working on data science projects, contributing to the Undergraduate Statistics Society, or exploring new technologies.
+            I'm Shariq, and thanks for stopping by! I'm currently in my 3rd year at the University of British Columbia (UBC), majoring in Combined Major in Science with a focus on Computer & Data Science. When I'm not buried in coursework, you'll probably find me working on data science projects, contributing to the Undergraduate Statistics Society, or exploring new technologies.
           </p>
           <p className="text-lg leading-relaxed text-gray-700 dark:text-gray-300">
             This site is my little corner of the internet where I share projects, thoughts, and whatever else comes to mind. Feel free to explore around!
@@ -519,7 +519,7 @@ function Projects(){
       desc: "Implemented advanced time-series forecasting models using Prophet, ARIMA, and seasonal decomposition to analyze Vancouver's climate data (1941-2024), identifying seasonal and long-term trends in temperature and precipitation. Preprocessed datasets using Pandas and NumPy, creating features such as rolling averages and time lags to improve forecasting. Evaluated model accuracy using RMSE and MAPE; visualized climate trends with Matplotlib and Seaborn to present findings.",
       tech: "Python • Pandas • NumPy • Prophet • ARIMA • Matplotlib • Seaborn • Time Series Analysis",
       link: "#",
-      github: "#",
+      github: "https://github.com/shariqimran/Van_Climate_Analysis",
       color: "from-blue-50 to-indigo-100 dark:from-blue-900/20 dark:to-indigo-900/20",
       image: "https://sites.northwestern.edu/elannesscohn/files/2019/11/1903-climate-resources-f.jpg" // Climate/weather data
     },
@@ -528,7 +528,8 @@ function Projects(){
       subtitle: "Statistical inference and hypothesis testing",
       desc: "Conducted statistical inference, bootstrapping, and hypothesis testing on crime rate fluctuations before and after COVID-19. Calculated confidence intervals and p-values to assess the significance of 'Offence Against a Person' crime rate fluctuations. Applied t-tests to account for replacement error, revealing significant increase in crime during COVID-19.",
       tech: "R • Statistical Inference • Bootstrapping • Hypothesis Testing • T-tests • Data Analysis",
-      link: "https://github.com/shariqimran/stat-201-crimeRateInference",
+      link: "#",
+      github: "https://github.com/shariqimran/stat-201-crimeRateInference",
       color: "from-blue-50 to-cyan-100 dark:from-blue-900/20 dark:to-cyan-900/20",
       image: "https://static01.nyt.com/images/2025/08/13/opinion/13crime-editorial-image/13crime-editorial-image-articleLarge.jpg?quality=75&auto=webp&disable=upscale" // Crime analysis
     },
@@ -537,7 +538,8 @@ function Projects(){
       subtitle: "KNN regression analysis",
       desc: "Conducted comprehensive data analysis on the Top 500 tennis players to predict career earnings using predictor variables. Utilized KNN-regression model, optimized it for the best predictor variable and performed in-depth analysis. Implemented data cleaning and preprocessing techniques to prepare the data for analysis, developed advanced data visualization skills using the ggplot2 library and performed statistical analysis to uncover insights and patterns in the data.",
       tech: "R • KNN Regression • Data Analysis • ggplot2 • Statistical Modeling • Data Visualization",
-      link: "https://github.com/shariqimran/dsci-100-tennisRegressionModel",
+      link: "#",
+      github: "https://github.com/shariqimran/dsci-100-tennisRegressionModel",
       color: "from-yellow-50 to-orange-100 dark:from-yellow-900/20 dark:to-orange-900/20",
       image: "https://media.licdn.com/dms/image/v2/D562DAQEYo1mktjNgBA/profile-treasury-image-shrink_800_800/profile-treasury-image-shrink_800_800/0/1683435291334?e=1756605600&v=beta&t=ZOeju61ZlZzU6l82xnSUoY6iovh1d3BtLi9Asg3-VGE" // Tennis
     },
@@ -570,7 +572,8 @@ function Projects(){
       subtitle: "Peer-to-peer advising platform",
       desc: "Designed and developed a peer-to-peer advising platform utilizing Python, Flask, and PostgreSQL with user authentication implemented through Google OAuth and Firebase and appointment scheduling via Calendly API. Incorporated front-end technologies such as HTML, CSS, and JavaScript to create a smooth interface and user experience. Applied Agile methodologies for efficient project management and collaboration resulting in a functional user-friendly solution.",
       tech: "Python • Flask • PostgreSQL • Google OAuth • Firebase • Calendly API • HTML • CSS • JavaScript",
-      link: "https://github.com/shariqimran/peerAdvice",
+      link: "#",
+      github: "https://github.com/shariqimran/peerAdvice",
       color: "from-blue-50 to-cyan-100 dark:from-blue-900/20 dark:to-cyan-900/20",
       image: "https://media.licdn.com/dms/image/v2/D4D12AQHr154lj8ef0A/article-cover_image-shrink_720_1280/article-cover_image-shrink_720_1280/0/1685697157069?e=1761782400&v=beta&t=b_jZ0g8RXfsPGag2LD66R4lxYgHwTCzaVXn6vqIS9wI" // Teamwork/peer advice
     },
@@ -856,14 +859,14 @@ function Fun(){
   }> = {
     cycling: {
       title: "Cycling Around Vancouver 🚴",
-      subtitle: "Exploring the city on two wheels",
+      subtitle: "Vancouver seawall & trails",
       description: "I like cycling around Stanley Park, along Kits Beach, and just cruising through the city! I’ve been chasing my 20k record lately, which usually turns into a battle with my cardio more than anything else. Strava keeps me honest… and also reminds me how much faster everyone else is.",
           image: "/images/cycling_1.jpg",
       link: "#",
       linkText: "Cycling Routes"
     },
     muaythai: {
-      title: "Muay Thai",
+      title: "Muay Thai 🥋",
       subtitle: "The art of eight limbs",
       description: "Muay Thai has been one of the most challenging but rewarding things I’ve tried. Training is a mix of kicks, clinches, and realizing just how much cardio I don’t have — but nothing beats the feeling of slowly getting better each time.",
       image: "/images/boxing_1.JPG",
@@ -871,7 +874,7 @@ function Fun(){
       linkText: "Training Journey"
     },
     golf: {
-      title: "Golf",
+      title: "Golf ⛳",
       subtitle: "Swing & putt",
       description: "I love heading to the range and working on my driver (still chasing that perfect shot). On weekends, you’ll probably find me at one of Vancouver’s pitch-and-putts, trying to shave a stroke off my short game and enjoying the laid-back vibe.",
       image: "/images/golf_2.PNG",
@@ -888,7 +891,7 @@ function Fun(){
     },
     volunteering: {
       title: "Volunteering in Vancouver 🤝",
-      subtitle: "VIFF & VSO contributions",
+      subtitle: "VIFF & VSO Vancouver",
       description: "I’ve volunteered at both the Vancouver International Film Festival (VIFF) and the Vancouver Symphony Orchestra (VSO) — two things I already loved as a fan. VIFF opened me up to a whole new range of local films and genres, and at VSO I get to hear orchestras play pieces that blow me away every time. I don’t go as often now, but whenever I do, it’s always a fun and rewarding experience.",
       image: "/images/volunteer_1.jpeg",
       link: "#",

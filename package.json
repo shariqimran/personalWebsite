@@ -1,10 +1,10 @@
 {
-  "name": "your-site",
+  "name": "shariq-portfolio",
   "private": true,
   "version": "1.0.0",
-  "description": "[Your Name] personal site - production ready Gatsby + TS + Tailwind",
+  "description": "Shariq Imran Hassan personal site - production ready Gatsby + TS + Tailwind",
   "scripts": {
-    "dev": "gatsby develop -H 0.0.0.0 -p 8000",
+    "dev": "NODE_OPTIONS='--no-deprecation' gatsby develop -H 0.0.0.0 -p 8000",
     "build": "gatsby build",
     "serve": "gatsby serve",
     "lint": "eslint . --ext .ts,.tsx",

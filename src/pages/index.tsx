@@ -165,7 +165,7 @@ function Hero(){
             transition={{ delay: 0.1, duration: 0.6 }} 
             className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-gray-900 dark:text-white mb-6 leading-tight"
           >
-            [Your Name]
+            Shariq Imran Hassan
           </motion.h1>
           <Typewriter 
             className="text-2xl sm:text-3xl text-gray-500 dark:text-gray-400 mb-10 font-medium" 
@@ -350,7 +350,7 @@ function About(){
           className="flex gap-4 sm:gap-6"
         >
           <motion.a 
-            href="#" 
+            href="https://github.com/shariqimran" 
             target="_blank" 
             rel="noreferrer"
             className="w-12 h-12 rounded-full border-2 border-gray-900 dark:border-gray-100 flex items-center justify-center hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors"
@@ -360,7 +360,7 @@ function About(){
                           <Github className="h-5 w-5 sm:h-6 sm:w-6 text-gray-900 dark:text-gray-100" />
           </motion.a>
           <motion.a 
-            href="#" 
+            href="https://www.linkedin.com/in/shariqimran/" 
             target="_blank" 
             rel="noreferrer"
             className="w-12 h-12 rounded-full border-2 border-gray-900 dark:border-gray-100 flex items-center justify-center hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors"
@@ -370,7 +370,7 @@ function About(){
                           <Linkedin className="h-5 w-5 sm:h-6 sm:w-6 text-gray-900 dark:text-gray-100" />
           </motion.a>
                       <motion.a 
-              href="mailto:your-email@example.com"
+              href="mailto:shariqihassan@gmail.com"
               className="w-10 h-10 sm:w-12 sm:h-12 rounded-full border-2 border-gray-900 dark:border-gray-100 flex items-center justify-center hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors"
               whileHover={{ scale: 1.1 }}
               whileTap={{ scale: 0.95 }}
@@ -389,7 +389,7 @@ function About(){
         >
           <h3 className="text-2xl font-bold text-gray-900 dark:text-white">Hi there!</h3>
           <p className="text-lg leading-relaxed text-gray-700 dark:text-gray-300">
-            Hey! I'm [Your Name], and thanks for stopping by! I'm currently [your current situation - e.g., studying at university, working as a developer, etc.]. When I'm not [your activities], you'll probably find me [your hobbies and interests].
+            Hey! I'm Shariq, and thanks for stopping by! I'm currently in my 3rd year at UBC, majoring in Combined Major in Science with a focus on Computer & Data Science. When I'm not buried in coursework, you'll probably find me working on data science projects, contributing to the Undergraduate Statistics Society, or exploring new technologies.
           </p>
           <p className="text-lg leading-relaxed text-gray-700 dark:text-gray-300">
             This site is my little corner of the internet where I share projects, thoughts, and whatever else comes to mind. Feel free to explore around!
@@ -406,17 +406,15 @@ function About(){
 function Experience(){
   const items = [
     { 
-      company: "Amazon", 
-      role: "Software Engineer Intern", 
-      when: "May 2024 - Aug 2024", 
+      company: "RBC", 
+      role: "QA Automation Analyst Intern", 
+      when: "Sep 2025 - Dec 2025", 
       location: "Vancouver, BC",
-      logo: "https://upload.wikimedia.org/wikipedia/commons/a/a9/Amazon_logo.svg",
+      logo: "https://upload.wikimedia.org/wikipedia/en/thumb/7/7f/RBC_Royal_Bank.svg/1280px-RBC_Royal_Bank.svg.png",
       bullets: [
-        "Built a centralized localization system for an internal platform, enabling consistent multilingual support across diverse page types",
-        "Integrated with internal APIs and tools to sync user language preferences and ensure seamless cross-platform behavior",
-        "Leveraged AWS infrastructure to automate translation workflows and improve reliability across dev and deployment environments"
+        "Excited to be joining RBC as a QA Automation Analyst Intern in Fall 2025—looking forward to learning and making an impact!",
       ],
-      technologies: ["React", "AWS", "Node.js", "TypeScript"]
+      technologies: ["Python", "Selenium", "Playwright"]
     },
   ];
   
@@ -503,6 +501,48 @@ function Experience(){
 
 function Projects(){
   // Separate projects into two categories
+
+  const dataScience = [
+    {
+      title: "Customer Personality Analysis",
+      subtitle: "Statistical modeling & marketing insights",
+      desc: "Conducted comprehensive customer segmentation analysis using logistic regression to identify factors influencing marketing campaign responses. Analyzed 2,240 customers' demographic and behavioral data, achieving 78.6% accuracy with 76.1% sensitivity. Key findings showed recency of purchase, prior campaign acceptance, and family structure significantly impact response rates.",
+      tech: "R • Statistical Modeling • Logistic Regression • Data Visualization • Marketing Analytics",
+      link: "#",
+      github: "https://github.com/Oscar-Yik/stat_301_project",
+      color: "from-purple-50 to-pink-100 dark:from-purple-900/20 dark:to-pink-900/20",
+      image: "https://nycdsa-blog-files.s3.us-east-2.amazonaws.com/2021/10/tyler/7832-977818-NfHoVsXm-1200x600.jpg" // Customer analysis
+    },
+    {
+      title: "Climate Analysis Vancouver",
+      subtitle: "Time-series forecasting models",
+      desc: "Implemented advanced time-series forecasting models using Prophet, ARIMA, and seasonal decomposition to analyze Vancouver's climate data (1941-2024), identifying seasonal and long-term trends in temperature and precipitation. Preprocessed datasets using Pandas and NumPy, creating features such as rolling averages and time lags to improve forecasting. Evaluated model accuracy using RMSE and MAPE; visualized climate trends with Matplotlib and Seaborn to present findings.",
+      tech: "Python • Pandas • NumPy • Prophet • ARIMA • Matplotlib • Seaborn • Time Series Analysis",
+      link: "#",
+      github: "#",
+      color: "from-blue-50 to-indigo-100 dark:from-blue-900/20 dark:to-indigo-900/20",
+      image: "https://sites.northwestern.edu/elannesscohn/files/2019/11/1903-climate-resources-f.jpg" // Climate/weather data
+    },
+    {
+      title: "COVID-19 Vancouver Crime Analysis",
+      subtitle: "Statistical inference and hypothesis testing",
+      desc: "Conducted statistical inference, bootstrapping, and hypothesis testing on crime rate fluctuations before and after COVID-19. Calculated confidence intervals and p-values to assess the significance of 'Offence Against a Person' crime rate fluctuations. Applied t-tests to account for replacement error, revealing significant increase in crime during COVID-19.",
+      tech: "R • Statistical Inference • Bootstrapping • Hypothesis Testing • T-tests • Data Analysis",
+      link: "https://github.com/shariqimran/stat-201-crimeRateInference",
+      color: "from-blue-50 to-cyan-100 dark:from-blue-900/20 dark:to-cyan-900/20",
+      image: "https://static01.nyt.com/images/2025/08/13/opinion/13crime-editorial-image/13crime-editorial-image-articleLarge.jpg?quality=75&auto=webp&disable=upscale" // Crime analysis
+    },
+    {
+      title: "Tennis Career Earnings Regression Model",
+      subtitle: "KNN regression analysis",
+      desc: "Conducted comprehensive data analysis on the Top 500 tennis players to predict career earnings using predictor variables. Utilized KNN-regression model, optimized it for the best predictor variable and performed in-depth analysis. Implemented data cleaning and preprocessing techniques to prepare the data for analysis, developed advanced data visualization skills using the ggplot2 library and performed statistical analysis to uncover insights and patterns in the data.",
+      tech: "R • KNN Regression • Data Analysis • ggplot2 • Statistical Modeling • Data Visualization",
+      link: "https://github.com/shariqimran/dsci-100-tennisRegressionModel",
+      color: "from-yellow-50 to-orange-100 dark:from-yellow-900/20 dark:to-orange-900/20",
+      image: "https://media.licdn.com/dms/image/v2/D562DAQEYo1mktjNgBA/profile-treasury-image-shrink_800_800/profile-treasury-image-shrink_800_800/0/1683435291334?e=1756605600&v=beta&t=ZOeju61ZlZzU6l82xnSUoY6iovh1d3BtLi9Asg3-VGE" // Tennis
+    },
+  ];
+  
   const softwareEngineering = [
     {
       title: "Quantitative Trading Analysis Platform",
@@ -512,7 +552,7 @@ function Projects(){
       link: "https://quantalgo.streamlit.app",
       github: "https://github.com/shariqimran/Quant",
       color: "from-green-50 to-emerald-100 dark:from-green-900/20 dark:to-emerald-900/20",
-      image: "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?auto=format&fit=crop&w=200&q=80" // Trading charts
+      image: "https://as1.ftcdn.net/v2/jpg/03/10/46/56/1000_F_310465670_Wy4QCEfxYU2ziHjbeZsNAumKhaZzZS1w.jpg" // Trading charts
     },
     {
       title: "TripExpense - Modern Trip Expense Tracker",
@@ -520,76 +560,33 @@ function Projects(){
       desc: "Full-stack web application that revolutionizes how friends split and track expenses during trips. Features smart expense tracking with automatic equal splitting, real-time balance calculation, group management with shareable links, comprehensive dashboard, CSV export, and AI-powered settlement suggestions. Built with modern technologies for seamless, secure, and intuitive group finance management.",
       tech: "Next.js 14 • TypeScript • Tailwind CSS • Supabase • PostgreSQL • Vercel • Framer Motion",
       link: "#",
-      github: "#",
-      color: "from-blue-50 to-indigo-100 dark:from-blue-900/20 dark:to-indigo-900/20",
-      image: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&fit=crop&w=200&q=80" // Travel/expense tracking
+      github: "https://github.com/nimamot/TripExpense",
+      color: "from-green-50 to-emerald-100 dark:from-green-900/20 dark:to-indigo-900/20",
+      // image: "https://cdn.prod.website-files.com/61d697f0187c4a95cd315ed3/638538d28043b36e334cd7f9_A%20complete%20guide%20to%20borrowing%20money.png" // Expense tracking
+      image: "https://a.storyblok.com/f/188325/1460x820/af7cf054d5/managing-business-travel-expenses.png" // Expense tracking
     },
     {
       title: "peerAdvice (nwHacks Hackathon)",
       subtitle: "Peer-to-peer advising platform",
-      desc: "Designed and developed a peer-to-peer advising platform utilizing Python, Flask, and PostgreSQL with user authentication implemented through Google OAuth and Firebase and appointment scheduling via Calendly API. Incorporated front-end technologies such as HTML, CSS, and JavaScript to create an intuitive interface and smooth user experience. Applied Agile methodologies for efficient project management and collaboration resulting in a functional and user-friendly solution.",
+      desc: "Designed and developed a peer-to-peer advising platform utilizing Python, Flask, and PostgreSQL with user authentication implemented through Google OAuth and Firebase and appointment scheduling via Calendly API. Incorporated front-end technologies such as HTML, CSS, and JavaScript to create a smooth interface and user experience. Applied Agile methodologies for efficient project management and collaboration resulting in a functional user-friendly solution.",
       tech: "Python • Flask • PostgreSQL • Google OAuth • Firebase • Calendly API • HTML • CSS • JavaScript",
-      link: "#",
+      link: "https://github.com/shariqimran/peerAdvice",
       color: "from-blue-50 to-cyan-100 dark:from-blue-900/20 dark:to-cyan-900/20",
-      image: "https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=200&q=80" // Teamwork/peer advice
+      image: "https://media.licdn.com/dms/image/v2/D4D12AQHr154lj8ef0A/article-cover_image-shrink_720_1280/article-cover_image-shrink_720_1280/0/1685697157069?e=1761782400&v=beta&t=b_jZ0g8RXfsPGag2LD66R4lxYgHwTCzaVXn6vqIS9wI" // Teamwork/peer advice
     },
     {
-      title: "mAssenger (Featured by Brain Station)",
-      subtitle: "iOS chat & media app",
-      desc: "Constructed a messenger app for iOS. The program allowed the user to create an account with their email address, login to their account, search for other users, and share texts, pictures, videos, and locations. User authentication is handled through FireBase cloud services. Users data (username, email, previous conversations) is also stored on FireBase so that the users can see their data when they log back in to their account. The app was developed with Swift and Ruby.",
-      tech: "Swift • Ruby • Firebase • iOS",
-      link: "#", 
-      color: "from-purple-50 to-pink-100 dark:from-purple-900/20 dark:to-pink-900/20",
-      image: "https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?auto=format&fit=crop&w=200&q=200" // iOS Messenger (phone chat)
-    },
-    {
-      title: "La Letra",
-      subtitle: "Spanish learning with music",
-      desc: "Interactive Spanish learning platform with song-based vocabulary and grammar practice.",
-      tech: "Django • HTML • CSS • PythonAnywhere",
+      title: "SportsStats - Comprehensive Sports Analytics",
+      subtitle: "Sports statistics and analysis platform",
+      desc: "Developed a comprehensive sports statistics and analysis platform offering detailed data across multiple sports. Built with PHP backend and Oracle database for robust data management, featuring user-friendly web interface with CSS styling and HTML structure. Provides comprehensive statistics for sports enthusiasts, analysts, and researchers with regular data updates.",
+      tech: "PHP • CSS • HTML • Oracle • Database Management • Web Development",
       link: "#",
-      color: "from-orange-50 to-red-100 dark:from-orange-900/20 dark:to-red-900/20",
-      image: "https://upload.wikimedia.org/wikipedia/commons/9/9a/Flag_of_Spain.svg"
+      github: "https://github.com/nimamot/SportsStats",
+      color: "from-blue-50 to-cyan-100 dark:from-blue-900/20 dark:to-cyan-900/20",
+      image: "https://cdn.shortpixel.ai/spai/q_lossy+ret_img+to_webp/thesoccersidelines.com/wp-content/uploads/2020/02/Soccer-Statistics-General.jpg" // Sports analytics
     },
   ];
 
-  const dataScience = [
-    {
-      title: "Automated Financial Analysis Pipeline",
-      subtitle: "Cloud-based financial analytics",
-      desc: "Designed and implemented a scalable data pipeline using AWS Lambda, S3, and DynamoDB to automate financial statement analysis. Processed user-uploaded financial statements in CSV format, conducted comprehensive analyses, and generated detailed PDF reports. Developed advanced data analysis features, including flagged transaction detection, spending trend visualization, and recurring transaction analysis, leveraging Python for data processing and visualization. Integrated cloud-based solutions for seamless data ingestion, analysis, and storage, highlighting the intersection of cloud computing and data science.",
-      tech: "AWS Lambda • S3 • DynamoDB • Python • Data Science • Cloud Computing",
-      link: "#",
-      color: "from-blue-50 to-cyan-100 dark:from-blue-900/20 dark:to-cyan-900/20",
-      image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=200&q=80" // Cloud data pipeline
-    },
-    {
-      title: "Bitcoin Price Prediction",
-      subtitle: "Crypto price forecasting",
-      desc: "Built a series of models, including Linear Regression, KNN, Random Forest, XGBoost, CatBoost, and LSTM, to forecast Bitcoin prices. Employed feature engineering techniques and hyperparameter optimization to enhance model accuracy and capture temporal dependencies. Developed preprocessing pipelines and utilized advanced regression analysis to uncover meaningful patterns in time-series data.",
-      tech: "Python • Machine Learning • XGBoost • CatBoost • LSTM • Time Series • Feature Engineering",
-      link: "#",
-      color: "from-yellow-50 to-orange-100 dark:from-yellow-900/20 dark:to-orange-900/20",
-      image: "https://www.ccn.com/wp-content/uploads/2025/07/bitcoin-price-breakout-or-breakdown-1536x864.webp" // Bitcoin coin and chart
-    },
-    {
-      title: "Sports Hub",
-      subtitle: "Sports data management",
-      desc: "Implemented a relational database for sports management using Oracle DB and SQL, focusing on comprehensive data organization. Enhanced user experience by incorporating advanced SQL operations, facilitating powerful data manipulation and insights. Designed a user-friendly web interface for efficient database interaction, featuring error handling and input validation.",
-      tech: "Oracle DB • SQL • Data Visualization • Web Interface • Data Management",
-      link: "#",
-      github: "#",
-      color: "from-green-50 to-emerald-100 dark:from-green-900/20 dark:to-emerald-900/20",
-      image: "https://images.unsplash.com/photo-1517649763962-0c623066013b?auto=format&fit=crop&w=400&q=80" // Sports analytics dashboard
-    },
-  ];
-  
-  const more = [
-    { title: "Personal Website", desc: "Modern portfolio site with animations and dark mode", tech: "Gatsby • React • TypeScript • Tailwind CSS • Framer Motion", emoji: "🌐", github: "#" },
-    { title: "Old Personal Website", desc: "Portfolio site with projects and blog", tech: "Django • HTML • CSS • PythonAnywhere", emoji: "🌐", github: "#" },
-    { title: "Earn Ace", desc: "Data analysis on Top 500 tennis players to predict career earnings using KNN-regression model", tech: "R • KNN Regression • Data Analysis • ggplot2 • Statistical Modeling", emoji: "🎾", github: "" },
-    { title: "NFT Bazaar", desc: "Java-based NFT marketplace application for buying and selling NFTs", tech: "Java • JSON • NFT Marketplace • User Management", emoji: "🖼️", github: "" },
-  ];
+
   
   // Helper to render a project card (collapsible)
   function CollapsibleProjectCard({ project }: { project: any }) {
@@ -674,10 +671,36 @@ function Projects(){
     );
   }
 
+  // Projects currently in progress
+  const projectsInProgress = [
+    {
+      title: "Bitcoin Price Prediction",
+      subtitle: "Crypto price forecasting with ML",
+      desc: "Building machine learning models to predict Bitcoin prices using time-series analysis and LSTM networks.",
+      tech: "Python • Machine Learning • XGBoost • CatBoost • LSTM • Time Series • Feature Engineering",
+      link: "#",
+      github: "https://github.com/nimamot/Price_prediction",
+      emoji: "₿",
+      color: "from-yellow-50 to-orange-100 dark:from-yellow-900/20 dark:to-orange-900/20",
+      image: "https://images.unsplash.com/photo-1621761191319-c6fb62004040?w=800&h=600&fit=crop&crop=center" // Bitcoin/crypto
+    },
+    {
+      title: "Animal Adoption Platform",
+      subtitle: "NGO website for animal welfare",
+      desc: "Developing a collaborative website for animal adoption and fundraising campaigns with modern web technologies.",
+      tech: "Node.js • Express • HTML • CSS • JavaScript • Web Development • Collaboration",
+      link: "#",
+      github: "https://github.com/AryaanHabib/nwHack",
+      emoji: "🐾",
+      color: "from-green-50 to-emerald-100 dark:from-green-900/20 dark:to-emerald-900/20",
+      image: "https://images.unsplash.com/photo-1450778869180-41d0601e046e?w=800&h=600&fit=crop&crop=center" // Animal adoption
+    }
+  ];
+
   // Merge and group projects for single-column display
   const allProjects = [
-    { section: 'Software Engineering', projects: softwareEngineering },
-    { section: 'Data Science', projects: dataScience }
+    { section: 'Data Science', projects: dataScience },
+    { section: 'Software Engineering', projects: softwareEngineering }
   ];
 
   return (
@@ -692,60 +715,62 @@ function Projects(){
             ))}
           </div>
         ))}
-      </div>
-      {/* More Projects & Notes section remains unchanged */}
-      <div className="mx-auto mt-16 max-w-4xl">
-        <h3 className="mb-8 text-center text-3xl font-bold text-gray-900 dark:text-white">More Projects</h3>
-        <div className="space-y-3">
-          {more.map((m, i) => (
-            <motion.details 
-              key={i} 
-              className="rounded-2xl border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-800 p-4 shadow-sm hover:shadow-md transition-shadow"
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ delay: i * 0.1, duration: 0.6 }}
-            >
-              <summary className="cursor-pointer list-none font-medium flex items-center justify-between">
-                <div className="flex items-center gap-3">
-                  <motion.div 
-                    animate={{ rotate: [0, 360] }}
-                    transition={{ duration: 8, repeat: Infinity, ease: "linear" }}
-                    className="text-xl"
+        
+        {/* Projects in Progress Section */}
+        <div className="mb-12">
+          <h3 className="mb-8 text-3xl font-bold text-gray-900 dark:text-white text-left">🚧 Projects in Progress</h3>
+          <div className="space-y-3">
+            {projectsInProgress.map((p, i) => (
+              <motion.details 
+                key={i} 
+                className="rounded-2xl border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-800 p-4 shadow-sm hover:shadow-md transition-shadow"
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ delay: i * 0.1, duration: 0.6 }}
+              >
+                <summary className="cursor-pointer list-none font-medium flex items-center justify-between">
+                  <div className="flex items-center gap-3">
+                    <motion.div 
+                      animate={{ rotate: [0, 360] }}
+                      transition={{ duration: 8, repeat: Infinity, ease: "linear" }}
+                      className="text-xl"
+                    >
+                      {p.emoji}
+                    </motion.div>
+                    <span className="text-gray-900 dark:text-white">{p.title}</span>
+                    <span className="text-sm text-gray-500 dark:text-gray-400">{p.subtitle}</span>
+                    <span className="text-xs text-gray-600 dark:text-gray-300">{p.desc}</span>
+                  </div>
+                  <motion.svg
+                    className="w-5 h-5 text-gray-900 dark:text-gray-100 transition-transform duration-300"
+                    whileHover={{ scale: 1.2 }}
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
                   >
-                    {m.emoji}
-                  </motion.div>
-                  <span className="text-gray-900 dark:text-white">{m.title}</span>
-                  <span className="text-sm text-gray-500 dark:text-gray-400">{m.desc}</span>
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                  </motion.svg>
+                </summary>
+                <div className="pt-4 pl-12 text-sm text-gray-600 dark:text-gray-300 flex items-center justify-between">
+                  <span>{p.tech}</span>
+                  {p.github && (
+                    <motion.a
+                      href={p.github}
+                      target="_blank"
+                      rel="noreferrer"
+                      className="inline-flex items-center justify-center w-8 h-8 rounded-full border border-gray-300 dark:border-gray-600 hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors"
+                      whileHover={{ scale: 1.1 }}
+                      whileTap={{ scale: 0.95 }}
+                    >
+                      <Github className="h-4 w-4 text-gray-900 dark:text-gray-100" />
+                    </motion.a>
+                  )}
                 </div>
-                <motion.svg
-                  className="w-5 h-5 text-gray-900 dark:text-gray-100 transition-transform duration-300"
-                  whileHover={{ scale: 1.2 }}
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
-                </motion.svg>
-              </summary>
-              <div className="pt-4 pl-12 text-sm text-gray-600 dark:text-gray-300 flex items-center justify-between">
-                <span>{m.tech}</span>
-                {m.github && m.github !== "" ? (
-                  <motion.a
-                    href={m.github}
-                    target="_blank"
-                    rel="noreferrer"
-                    className="inline-flex items-center justify-center w-8 h-8 rounded-full border border-gray-300 dark:border-gray-600 hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors"
-                    whileHover={{ scale: 1.1 }}
-                    whileTap={{ scale: 0.95 }}
-                  >
-                    <Github className="h-4 w-4 text-gray-900 dark:text-gray-100" />
-                  </motion.a>
-                ) : null}
-              </div>
-            </motion.details>
-          ))}
+              </motion.details>
+            ))}
+          </div>
         </div>
       </div>
     </section>
@@ -1038,7 +1063,7 @@ function Contact(){
         transition={{ duration: 0.6 }}
       >
         <p className="text-gray-600 dark:text-gray-300 text-center">
-          Email <a href="mailto:your-email@example.com" className="underline font-medium text-gray-900 dark:text-white">your-email@example.com</a>. Based in [Your Location].
+          Email <a href="mailto:shariqihassan@gmail.com" className="underline font-medium text-gray-900 dark:text-white">shariqihassan@gmail.com</a>. Based in Vancouver, BC.
         </p>
       </motion.div>
     </section>
@@ -1048,16 +1073,16 @@ function Contact(){
 function Footer(){
   return (
     <footer className="mt-16 mb-10 flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-6 text-sm text-gray-600 dark:text-gray-400">
-      <IconLink href="#" label="GitHub">
+      <IconLink href="https://github.com/shariqimran" label="GitHub">
         <Github className="h-4 w-4"/> GitHub
       </IconLink>
-      <IconLink href="#" label="LinkedIn">
+      <IconLink href="https://www.linkedin.com/in/shariqimran/" label="LinkedIn">
         <Linkedin className="h-4 w-4"/> LinkedIn
       </IconLink>
-              <IconLink href="mailto:your-email@example.com" label="Email">
+              <IconLink href="mailto:shariqihassan@gmail.com" label="Email">
         <Mail className="h-4 w-4"/> Email
       </IconLink>
-      <span className="mt-2 sm:mt-0 sm:mt-0 sm:ml-2">© {new Date().getFullYear()} [Your Name] :')</span>
+      <span className="mt-2 sm:mt-0 sm:mt-0 sm:ml-2">© {new Date().getFullYear()} Shariq :')</span>
     </footer>
   );
 }

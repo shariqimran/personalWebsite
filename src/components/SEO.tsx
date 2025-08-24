@@ -9,8 +9,8 @@ interface SEOProps {
 }
 
 export default function SEO({ 
-  title = "[Your Name]", 
-  description = "Portfolio, projects, writing, and contact for [Your Name]",
+  title = "Shariq Hassan", 
+  description = "Portfolio, projects, writing, and contact for Shariq Hassan",
   image = "/favicon.svg",
   url = "#"
 }: SEOProps) {

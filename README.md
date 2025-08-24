@@ -1,4 +1,4 @@
-# [Your Name] - Personal Portfolio Website
+# Shariq Imran Hassan - Personal Portfolio Website
 
 A modern, responsive portfolio website built with Gatsby, React, TypeScript, and Tailwind CSS.
 
@@ -61,25 +61,25 @@ npm run dev
 
 ### Personal Information
 
-Update the following files with your information:
+The following files have been updated with Shariq's information:
 
-1. **`src/pages/index.tsx`** - Update your name, bio, projects, and contact information
-2. **`src/components/SEO.tsx`** - Update SEO metadata
-3. **`package.json`** - Update project name and description
+1. **`src/pages/index.tsx`** - Name, bio, projects, and contact information
+2. **`src/components/SEO.tsx`** - SEO metadata
+3. **`package.json`** - Project name and description
 
 ### Projects
 
-Edit the projects array in `src/pages/index.tsx` to showcase your own work:
+The projects array in `src/pages/index.tsx` showcases Shariq's work:
 
 ```typescript
 const projects = [
   {
-    title: "Your Project Name",
-    subtitle: "Project subtitle",
-    desc: "Project description...",
-    tech: "Tech stack...",
-    link: "https://your-project-url.com",
-    github: "https://github.com/yourusername/project",
+    title: "Climate Analysis Vancouver",
+    subtitle: "Time-series forecasting models",
+    desc: "Implemented advanced time-series forecasting models...",
+    tech: "Python • Pandas • Prophet • ARIMA • Time Series Analysis",
+    link: "#",
+    github: "#",
     // ... other properties
   }
 ];

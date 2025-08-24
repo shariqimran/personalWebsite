@@ -157,7 +157,7 @@ function Hero(){
             transition={{ duration: 0.6 }} 
             className="text-2xl text-gray-500 dark:text-gray-400 mb-2"
           >
-            Howdy! I'm
+            Hi! I'm
           </motion.p>
           <motion.h1 
             initial={{ opacity: 0, y: 20 }} 
@@ -165,11 +165,11 @@ function Hero(){
             transition={{ delay: 0.1, duration: 0.6 }} 
             className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-gray-900 dark:text-white mb-6 leading-tight"
           >
-            Shariq Imran Hassan
+            Shariq Hassan
           </motion.h1>
           <Typewriter 
             className="text-2xl sm:text-3xl text-gray-500 dark:text-gray-400 mb-10 font-medium" 
-            phrases={["Software Engineer", "Cybersecurity Enthusiast", "Data Scientist", "ML/AI Explorer", "Coffee Lover", "I like building useful things"]} 
+            phrases={["Software Engineer", "Data Scientist", "ML/AI Explorer", "F1 Fanatic 🏎️💨", "I like building useful things"]} 
           />
         </div>
         
@@ -389,7 +389,7 @@ function About(){
         >
           <h3 className="text-2xl font-bold text-gray-900 dark:text-white">Hi there!</h3>
           <p className="text-lg leading-relaxed text-gray-700 dark:text-gray-300">
-            Hey! I'm Shariq, and thanks for stopping by! I'm currently in my 3rd year at UBC, majoring in Combined Major in Science with a focus on Computer & Data Science. When I'm not buried in coursework, you'll probably find me working on data science projects, contributing to the Undergraduate Statistics Society, or exploring new technologies.
+            Hey! I'm Shariq, and thanks for stopping by! I'm currently in my 3rd year at the University of British Columbia (UBC), majoring in Combined Major in Science with a focus on Computer & Data Science. When I'm not buried in coursework, you'll probably find me working on data science projects, contributing to the Undergraduate Statistics Society, or exploring new technologies.
           </p>
           <p className="text-lg leading-relaxed text-gray-700 dark:text-gray-300">
             This site is my little corner of the internet where I share projects, thoughts, and whatever else comes to mind. Feel free to explore around!
@@ -555,7 +555,7 @@ function Projects(){
       image: "https://as1.ftcdn.net/v2/jpg/03/10/46/56/1000_F_310465670_Wy4QCEfxYU2ziHjbeZsNAumKhaZzZS1w.jpg" // Trading charts
     },
     {
-      title: "TripExpense - Modern Trip Expense Tracker",
+      title: "TripExpense",
       subtitle: "Full-stack expense splitting application",
       desc: "Full-stack web application that revolutionizes how friends split and track expenses during trips. Features smart expense tracking with automatic equal splitting, real-time balance calculation, group management with shareable links, comprehensive dashboard, CSV export, and AI-powered settlement suggestions. Built with modern technologies for seamless, secure, and intuitive group finance management.",
       tech: "Next.js 14 • TypeScript • Tailwind CSS • Supabase • PostgreSQL • Vercel • Framer Motion",
@@ -575,7 +575,7 @@ function Projects(){
       image: "https://media.licdn.com/dms/image/v2/D4D12AQHr154lj8ef0A/article-cover_image-shrink_720_1280/article-cover_image-shrink_720_1280/0/1685697157069?e=1761782400&v=beta&t=b_jZ0g8RXfsPGag2LD66R4lxYgHwTCzaVXn6vqIS9wI" // Teamwork/peer advice
     },
     {
-      title: "SportsStats - Comprehensive Sports Analytics",
+      title: "SportsStats",
       subtitle: "Sports statistics and analysis platform",
       desc: "Developed a comprehensive sports statistics and analysis platform offering detailed data across multiple sports. Built with PHP backend and Oracle database for robust data management, featuring user-friendly web interface with CSS styling and HTML structure. Provides comprehensive statistics for sports enthusiasts, analysts, and researchers with regular data updates.",
       tech: "PHP • CSS • HTML • Oracle • Database Management • Web Development",
@@ -832,15 +832,16 @@ function ProjectCard({ title, desc, tech, link, emoji, color, index }: {
 }
 
 function Fun(){
-  const [selectedActivity, setSelectedActivity] = useState("robotics");
+  const [selectedActivity, setSelectedActivity] = useState("cycling");
 
   const sideQuests = [
-    { id: "robotics", emoji: "🤖", label: "Robotics", desc: "Building & programming" },
+    { id: "cycling", emoji: "🚴", label: "Cycling", desc: "Vancouver seawall & trails" },
     { id: "muaythai", emoji: "🥋", label: "Muay Thai", desc: "Kickboxing & clinch work" },
-    { id: "photography", emoji: "📸", label: "Photography", desc: "Street & portrait shots" },
-    { id: "basketball", emoji: "🏀", label: "Basketball", desc: "Pickup games & shooting" },
-    { id: "finance", emoji: "💰", label: "Personal Finance", desc: "Budgeting & investing" },
+    { id: "golf", emoji: "⛳", label: "Golf", desc: "Swing & putt" },
+    { id: "djing", emoji: "🎧", label: "DJing", desc: "Mixing & live sets" },
+    { id: "volunteering", emoji: "🤝", label: "Volunteering", desc: "VIFF & VSO Vancouver" },
     { id: "markets", emoji: "📈", label: "Financial Markets", desc: "Trading & analysis" },
+    { id: "cooking", emoji: "👨‍🍳", label: "Cooking", desc: "Culinary adventures" },
     { id: "traveling", emoji: "✈️", label: "Traveling", desc: "Exploring new places" },
   ];
 
@@ -853,67 +854,69 @@ function Fun(){
     link: string;
     linkText: string;
   }> = {
-    robotics: {
-      title: "Robotics & Automation 🤖",
-      subtitle: "Building intelligent machines",
-      description: "Give me a pile of wires and a motor, and I’ll try to make it move! I love building robots that (sometimes) do what I tell them. If it beeps, spins, or follows a line, I’m probably grinning nearby.",
-      image: "/static/robotics.png",
-      achievements: [
-        "Led The Circuit Breakers team in UBC's COGS 300 Robot Tournament",
-        "Achieved fastest line following time in class (15 seconds)",
-        "Built autonomous robots with sensor integration and adaptive algorithms",
-        "Programmed wall-following and object detection systems"
-      ],
+    cycling: {
+      title: "Cycling Around Vancouver 🚴",
+      subtitle: "Exploring the city on two wheels",
+      description: "I like cycling around Stanley Park, along Kits Beach, and just cruising through the city! I’ve been chasing my 20k record lately, which usually turns into a battle with my cardio more than anything else. Strava keeps me honest… and also reminds me how much faster everyone else is.",
+          image: "/images/cycling_1.jpg",
       link: "#",
-      linkText: "View Project"
+      linkText: "Cycling Routes"
     },
     muaythai: {
-      title: "Muay Thai 🥋",
+      title: "Muay Thai",
       subtitle: "The art of eight limbs",
-      description: "I get punched (and punch back) for fun! Muay Thai is my way to blow off steam, learn cool moves, and occasionally discover new bruises. It’s sweaty, tough, and honestly, a blast.",
-      image: "https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?q=80&w=1200&auto=format&fit=crop",
+      description: "Muay Thai has been one of the most challenging but rewarding things I’ve tried. Training is a mix of kicks, clinches, and realizing just how much cardio I don’t have — but nothing beats the feeling of slowly getting better each time.",
+      image: "/images/boxing_1.JPG",
       link: "#",
       linkText: "Training Journey"
     },
-    photography: {
-      title: "Photography 📸",
-      subtitle: "Capturing moments & stories",
-      description: "I love wandering around with my camera, snapping street shots and goofy portraits of friends. Sometimes I get lucky and capture something cool—other times, it’s just pigeons. Either way, it’s all about having fun and seeing the world in a new way!",
-      image: "/static/photography.png",
-      link: "https://www.instagram.com/photography_cafeee/",
-      linkText: "Photo Gallery"
-    },
-    basketball: {
-      title: "Basketball 🏀",
-      subtitle: "Teamwork & strategy",
-      description: "I’m not making the NBA, but I love a good pickup game. Sometimes I hit threes, sometimes I trip over my own feet. Either way, it’s all about the laughs and high-fives.",
-      image: "https://images.unsplash.com/photo-1546519638-68e109498ffc?q=80&w=1200&auto=format&fit=crop",
+    golf: {
+      title: "Golf",
+      subtitle: "Swing & putt",
+      description: "I love heading to the range and working on my driver (still chasing that perfect shot). On weekends, you’ll probably find me at one of Vancouver’s pitch-and-putts, trying to shave a stroke off my short game and enjoying the laid-back vibe.",
+      image: "/images/golf_2.PNG",
       link: "#",
-      linkText: "Game Highlights"
+      linkText: "Golf Journey"
     },
-    finance: {
-      title: "Personal Finance 💰",
-      subtitle: "Building wealth & security",
-      description: "Budgeting, investing, and trying not to blow my paycheck on coffee. I geek out over spreadsheets and love the feeling of finding a good deal. Adulting, but make it fun!",
-      image: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?q=80&w=1200&auto=format&fit=crop",
+    djing: {
+      title: "DJing 🎧",
+      subtitle: "Mixing & live sets",
+      description: "I’m brand new to DJing after buying my first deck, so most of my time is spent experimenting and figuring out what blends together. Half the fun is messing it up, the other half is catching those rare moments where it actually sounds good.",
+      image: "/images/dj_1.JPG",
       link: "#",
-      linkText: "Finance Blog"
+      linkText: "DJ Journey"
+    },
+    volunteering: {
+      title: "Volunteering in Vancouver 🤝",
+      subtitle: "VIFF & VSO contributions",
+      description: "I’ve volunteered at both the Vancouver International Film Festival (VIFF) and the Vancouver Symphony Orchestra (VSO) — two things I already loved as a fan. VIFF opened me up to a whole new range of local films and genres, and at VSO I get to hear orchestras play pieces that blow me away every time. I don’t go as often now, but whenever I do, it’s always a fun and rewarding experience.",
+      image: "/images/volunteer_1.jpeg",
+      link: "#",
+      linkText: "Volunteer Stories"
     },
     markets: {
       title: "Financial Markets 📈",
       subtitle: "Trading & analysis",
-      description: "Stocks go up, stocks go down, and I’m here for the ride. I enjoy reading charts, making wild predictions, and pretending I’m on Wall Street (from my laptop, in pajamas).",
-      image: "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?q=80&w=1200&auto=format&fit=crop",
+      description: "I recently got into the world of financial markets, mostly experimenting and trying to make sense of charts that move faster than I can react. One big takeaway so far: investing early really does matter, even if my current strategy is mostly vibes.",
+      image: "/images/finance_1.jpg",
       link: "#",
       linkText: "Market Analysis"
     },
     traveling: {
       title: "Traveling ✈️",
       subtitle: "Exploring new places",
-      description: "I love hopping on planes, trains, and the occasional sketchy bus to see new places. Every trip comes with stories, weird snacks, and at least one lost sock.",
-      image: "/static/newYork.png",
+      description: "Traveling for me is all about diving into new cities, wandering through local streets and markets, and eating my way through different cultures. I’m a foodie at heart, so every trip is built around discovering what the locals eat.",
+      image: "/images/travel_2.PNG",
       link: "#",
       linkText: "Travel Stories"
+    },
+    cooking: {
+      title: "Cooking Adventures 👨‍🍳",
+      subtitle: "Culinary experiments",
+      description: "I like to cook here and there, mostly when a recipe on Instagram catches my eye. My cooking is pretty experimental — sometimes it’s great, other times it’s… less than great — but it’s always fun trying.",
+      image: "/images/cooking_1.JPG",
+      link: "#",
+      linkText: "Recipe Collection"
     },
   };
 
@@ -929,7 +932,7 @@ function Fun(){
         transition={{ duration: 0.6 }}
         className="text-center text-gray-600 dark:text-gray-300 mb-12 max-w-2xl mx-auto"
       >
-        There's more to life than just work and school so I'm a strong advocate for side quests in life :). From martial arts to financial markets, here are some of my notable adventures (click around!) ✨:
+        There's more to life than just work and school so I'm a strong advocate for side quests in life :). From cycling around Vancouver to mixing music, here are some of my notable adventures (click around!) ✨:
       </motion.p>
       
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12">
